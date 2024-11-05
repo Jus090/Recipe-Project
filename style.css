@@ -1,0 +1,120 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Outfit";
+	font-weight: 400;
+	line-height: 1.5;
+	background: #f3ebd8;
+	font-color: hsl(14, 45%, 36%);
+}
+
+img{
+	display: block;
+	max-width:100%;
+}
+h1,h2,h3,h4{
+	font-family: "Young Serif";
+	font-weight: 400;
+	line-height: 1.2;
+	color: hsl(14, 45%, 36%);
+	font-size: 2rem;
+}
+
+.recipe-title{
+	font-size: 2.75rem;
+	color: hsl(24, 5%, 18%);
+}
+.prep-title{
+	font-size: 1.275rem;
+	color:hsl(332, 51%, 32%);
+	font-family: "Outfit";
+	font-weight:600;
+}
+
+span{
+	font-weight: 700;
+	color:hsl(30, 10%, 34%);
+}
+[data-cell = "nutritonal-value"]{
+	color:hsl(14, 45%, 36%);
+	font-weight: 600;
+	font-family:"Outfit";
+}
+li{
+	padding-left: 1rem;
+	margin-bottom: .5rem;
+}
+li::marker{
+	color: hsl(14, 45%, 36%);
+	font-weight: 600;
+}
+
+.recipe-wrapper{
+	max-width: 45rem;
+	background: white;
+	padding: 1.75rem;
+	border-radius: 1.5rem;
+
+}
+
+.wrapper{
+	display: grid;
+	place-items: center;
+}
+
+.recipe-img{
+	border-radius: .8rem;
+}
+
+section{
+	margin-top: 2rem;
+}
+
+hr{
+	outline: none;
+	border: none;
+	height: 1px;
+	background:hsl(30, 54%, 90%);
+	margin-top: 2rem;
+}
+
+.preparation-time{
+	background: hsl(330, 100%, 98%);
+	padding: 1.5rem;
+	border-radius: .8rem;	
+}
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+tr{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 1rem;
+	border-bottom: 1px solid hsl(30, 54%, 90%);
+}
+
+/*media query*/
+
+@media(max-width: 500px){
+	.recipe-wrapper{
+		margin: 0;
+		padding: 0;
+		border-radius: 0;
+	}
+
+	.recipe-img{
+		border-radius: 0;
+
+	}
+	.recipe-container{
+		padding: 0 .1.75rem;
+	}
+
+	.recipe-title{
+		font-size: 2.2rem;
+	}
+}
